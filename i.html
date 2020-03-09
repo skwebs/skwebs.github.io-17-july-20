@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link href="https://cdn.jsdelivr.net/gh/skwebs/skwebs.github.io@master/assets/fonts/panton/panton.css" rel="stylesheet">
+		<!-- Required meta tags -->
+		<title>:: SKWebs | Touch Responsive Sidebar Drawer ::</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="This is a touch responsive sidebar drawer that can open and close on finger movement direction as like android app sidebar drawer." />
+		<meta name="keywords" content="Touch responsive Sidebar drawer, Open and close sidebar on finger movement tester," />
+		<meta name="theme-color" content="#0c5ca2" >
+		<!--<meta name="theme-color" content="#0d123d">-->
+		
+		<!-- Required og tags -->
+		<meta property="og:title" content=":: SKWebs | Touch Responsive Sidebar Drawer ::" >
+		<meta property="og:description" content="This is a touch responsive sidebar drawer that can open and close on finger movement gester as like android app sidebar drawer." >
+		<meta property="og:locale" content="en_UK" >
+		
+		<!-- Required og:image tags -->
+		<meta property="og:image" content="https://cdn.jsdelivr.net/gh/skwebs/skwebs.github.io@master/assets/img/icons/icon-460x460-68.92k.png">
+		<meta property="og:image:url" content="https://cdn.jsdelivr.net/gh/skwebs/skwebs.github.io@master/assets/img/icons/icon-460x460-68.92k.png">
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:alt" content="skwebs-logo">
+		<meta property="og:image:width" content="460" />
+		<meta property="og:image:height" content="460" />
+		
+		<!-- Required favicon -->
+		<link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/skwebs/skwebs.github.io@0aad010a75907a60147ad7b719b145f8a6cceec8/assets/img/skwebs-3-88.png" sizes="16x16,32x32,64x64" >
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		
+		<!-- manifest -->
+		<link rel="manifest" href="manifest.webmanifest">
+		
+		<!-- all CSS file-->
+		<!-- font awesome 4.7.0 -->
+		<link href="./assets/lib/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+		<!-- bootstrap 4 -->
+		<link href="./assets/lib/bootstrap/4.4.1/bootstrap.min.css"  rel="stylesheet">
+		<!-- universal parallax -->
+		<link href="./assets/lib/universal-parallax/1.3.2/universal-parallax.min.css"  rel="stylesheet">
+		<!-- animatecss -->
+		<link href="./assets/lib/animate-css/3.7.2/animate.css"  rel="stylesheet">
+		<!-- slick carousel -->
+		<link href="./assets/lib/slick/1.8.1/slick.css"  rel="stylesheet">
+		<!-- slick waves -->
+		<link href="./assets/lib/waves/0.7.6/waves.min.css"  rel="stylesheet">
+		<!-- hamburger css -->
+		<link href="./assets/theme/hamburger.css"  rel="stylesheet">
+		<!-- font -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+		
+		<!-- theme css -->
+		<!-- customize css -->
+		<link href="./assets/theme/css/customize.css"  rel="stylesheet">
+		<!-- common css -->
+		<link href="./assets/theme/css/common.css"  rel="stylesheet">
+		<!-- header css -->
+		<link href="./assets/theme/css/header.css"  rel="stylesheet">
+		<!-- footer css -->
+		<link href="./assets/theme/css/footer.css"  rel="stylesheet">
+		<!-- nav css -->
+		<link href="./assets/theme/css/nav.css"  rel="stylesheet">
+		<!-- drawer css -->
+		<link href="./assets/theme/css/drawer.css"  rel="stylesheet">
+		<!-- slider css css -->
+		<link href="./assets/theme/css/mod_slider.css"  rel="stylesheet">
+		<!-- parallax css -->
+		<link href="./assets/theme/css/parallax.css"  rel="stylesheet">
+		<!-- empty css -->
+		<link href="./assets/theme/css/empty.css"  rel="stylesheet">
+		
+		<title>Touch Responsive Sidebar Drawer</title>
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<!-- favicon -->
+		<link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/skwebs/skwebs.github.io@0aad010a75907a60147ad7b719b145f8a6cceec8/assets/img/skwebs-3-88.png" sizes="16x16,32x32,64x64" >
+		
+		<style type="text/css">
+		/*@font-face{
+		font-family:'intro_regular';
+		src:url(./assets/panton/intro-webfont.eot);
+		src:url(./assets/panton/intro-webfont.eot?#iefix) format("embedded-opentype"),url(./assets/panton/intro-webfont.woff2) format("woff2"),url(./assets/panton/intro-webfont.woff) format("woff"),url(./assets/panton/intro-webfont.ttf) format("truetype"),url(https://www.freevector.com/assets/panton/intro-webfont-daa7f659a7be9c8100274f0b2cafd9d56654162ec9d627e41fd71aba9f128e9a.svg#intro_regular) format("svg");
+		font-weight:normal;
+		font-style:normal
+		}
+		@font-face{
+		font-family:'panton_bold';
+		src:url(./assets/panton/panton-bold-webfont.eot);
+		src:url(./assets/panton/panton-bold-webfont.eot?#iefix) format("embedded-opentype"),url(./assets/panton/panton-bold-webfont.woff2) format("woff2"),url(./assets/panton/panton-bold-webfont.woff) format("woff"),url(./assets/panton/panton-bold-webfont.ttf) format("truetype"),url(https://www.freevector.com/assets/panton/panton-bold-webfont-33884798e3bf2b77605b615aab9bcc730e785faaa9f5ce151e3288648b3934fd.svg#pantonbold) format("svg");
+		font-weight:normal;
+		font-style:normal
+		}
+		@font-face{
+		font-family:'panton_extrabold';
+		src:url(./assets/panton/panton-extrabold-webfont.eot);
+		src:url(./assets/panton/panton-extrabold-webfont.eot?#iefix) format("embedded-opentype"),url(./assets/panton/panton-extrabold.woff2) format("woff2"),url(./assets/panton/panton-extrabold-webfont.woff) format("woff"),url(./assets/panton/panton-extrabold-webfont.ttf) format("truetype"),url(https://www.freevector.com/assets/panton/panton-extrabold-webfont-1848271d6cdde92e7e29bc18f07bdd043d279b7440239748fe46ca975f19fefb.svg#panton_extraboldregular) format("svg");
+		font-weight:normal;
+		font-style:normal
+		}
+		@font-face{
+		font-family:'panton_semibold';
+		src:url(./assets/panton/panton-semibold-webfont.eot);
+		src:url(./assets/panton/panton-semibold-webfont.eot?#iefix) format("embedded-opentype"),url(./assets/panton/panton-semibold-webfont.woff2) format("woff2"),url(./assets/panton/panton-semibold-webfont.woff) format("woff"),url(./assets/panton/panton-semibold-webfont.ttf) format("truetype"),url(https://www.freevector.com/assets/panton/panton-semibold-webfont-1c99189968f9996381e7b52975e1e4f928eace211116c9a8234820329c916453.svg#panton_semiboldregular) format("svg");
+		font-weight:normal;
+		font-style:normal
+		}
+		@font-face{
+		font-family:'panton_regular';
+		src:url(./assets/panton/panton-regular-webfont.eot);
+		src:url(./assets/panton/panton-regular-webfont.eot?#iefix) format("embedded-opentype"),url(./assets/panton/panton-regular-webfont.woff2) format("woff2"),url(./assets/panton/panton-regular-webfont.woff) format("woff"),url(./assets/panton/panton-regular-webfont.ttf) format("truetype"),url(https://www.freevector.com/assets/panton/panton-regular-webfont-3e89171debd11e1335d5fe4e1ccaa85a15a5dc7f41d62c73274656b063280db1.svg#pantonregular) format("svg");
+		font-weight:normal;
+		font-style:normal
+		}
+		
+		@font-face{
+		font-family:'panton_demo_black';
+		src:url(./assets/fonts/pantonDemo/PantonNarrowDemo-Light.otf);
+		font-weight:normal;
+		font-style:normal
+		}*/
+		
+		
+		{font-family:"panton_bold";}
+		{font-family:"intro_regular";}
+		{font-family:"panton_semibold";}
+		
+		</style>
+	</head>
+	<body>
+		<!--overflow hidden of whole page -->
+		<div style="overflow:hidden;"  >
+		
+			<!-- header -->
+			<header>
+			</header>
+			<!-- /header -->
+			
+			<!-- nav -->
+			<nav class="py-0 navbar sk-nav fixed-top navbar-expand-m navbar-light bg-white">
+				<div class="container" >
+					<a class="pl-2 navbar-brand wow fadeIn" href="#">
+						<img src="./assets/img/icons/skwebs-64x64-3.88k.png">
+					</a>
+					<button class="hamburger flat-box hamburger--arrowalt navbar-toggler" type="button" aria-controls="menuContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active home flat-box-light">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link<!--<i class="fa fa-quote-left fa-pull-right fa-border" aria-hidden="true"></i>--></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- /nav -->
+			
+			<!-- drawer -->
+			<section class="drawer__section" >
+				<div class="drawer flat-box" ></div>
+				<div class="overlay" ></div>
+			</section>
+			<!-- /drawer -->
+			
+			
+			
+			<!-- main -->
+			<main>
+				
+				<!-- welcome parallax -->
+				<section class="pl__container vh-100 flat-box" >
+					<div style="position:relative;" class="content container wow fadeInUp float-box-light" >
+						<h1 class="h1 wow fadeInLeft" data-wow-delay=".6s">Welcome to SKWebs. </h1>
+						<p class="text-justify wow fadeInRight" data-wow-delay=".9s">Here you get some ideas with code and their example based on my creative idea for beginners that can you use in your project. And you also get some selected useful plugin that make your project unique. </p>
+						<p class="m-0 py-2 bg-primary wow fadeInUp" data-wow-delay=".9s"><a class="text-light d-block "  href="https://skwebs.github.io" >Read more...</a></p>
+					</div>
+					<div class="parallax" data-parallax-image="./assets/img/web/sea-bank.jpg">
+				</section>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<!-- /welcome parallax -->
+				<!-- header slider (slick carousel) -->
+				<style type="text/css">
+				.slider__one_item{background-image:url("./assets/img/web/laptop-typing.jpg");}
+				</style>
+				
+				<section class="py- slider__one_wraper" >
+					<h1 class="text-center text-light" >Project Features</h1>
+					<div class="slider__one flat-box-light" >
+				
+						<!-- Item -->
+						<div  class="slider__one_item" >
+							<div class="slider__one_layer" >	
+								<div class="slider__one_slide" >
+									<div>
+										<h1 class="slider__one_header1" >Features</h1>
+										<p class="slider__one_header2" >That I add in this Web App.</p>
+										<p class="slider__one_info" >
+											This page is created for beginners. 
+											They get some unique ideas with project source code that they 
+											can use in their projects easy way. 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // Item -->
+					
+						<!-- Item -->
+						<div  class="slider__one_item" >
+							<div class="slider__one_layer" >	
+								<div class="slider__one_slide" >
+									<div>
+										<h1 class="slider__one_header1" >Feature 1</h1>
+										<h4 class="slider__one_header2" >Touch Responsive Sidebar.</h4>
+										<p class="slider__one_info" >
+											This project Sidebar Drawer is touch responsive it means the 
+											sidebar drawer open and close with your finger movement (as like
+											android app drawers).
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // Item -->
+						
+						
+						<!-- Item -->
+						<div  class="slider__one_item" >
+							<div class="slider__one_layer" >	
+								<div class="slider__one_slide" >
+									<div>
+										<h1 class="slider__one_header1" >Feature 2</h1>
+										<h4 class="slider__one_header2" >Universal Parallax.</h4>
+										<p class="slider__one_info" >
+											I am using "<b>Universal Parallax</b>" third party plugin for 
+											giving background parallax image effect.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // Item -->
+						
+						
+						<!-- Item -->
+						<div  class="slider__one_item" >
+							<div class="slider__one_layer" >	
+								<div class="slider__one_slide" >
+									<div>
+										<h1 class="slider__one_header1" >Feature 3</h1>
+										<h4 class="slider__one_header2" >Slick Carousel Slider.</h4>
+										<p class="slider__one_info" >
+											I am using most popular third party carousel plugin 
+											"<b>Slick</b>" that give us much options to customize
+											slider as your wish.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // Item -->
+						
+						<!-- Item -->
+						<div  class="slider__one_item" >
+							<div class="slider__one_layer" >	
+								<div class="slider__one_slide" >
+									<div>
+										<h1 class="slider__one_header1" >Feature 4</h1>
+										<h4 class="slider__one_header2" >Animate.css Animation</h4>
+										<p class="slider__one_info" >
+											I am using most powerful animation plugin 
+											"<b>Animate.css</b>" for giving beautiful animation effects in
+											elements that make more attractive your web page.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // Item -->
+						
+						
+						<!-- Item -->
+						<div  class="slider__one_item" >
+							<div class="slider__one_layer" >	
+								<div class="slider__one_slide" >
+									<div>
+										<h1 class="slider__one_header1" >Feature 5</h1>
+										<h4 class="slider__one_header2" >Waves Ripple Effect.</h4>
+										<p class="slider__one_info" >
+											"<b>Waves.js</b>" is a most similar waves effects plugin as like
+											materialize waves effects that make browsing experience as like 
+											google materialize framework.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // Item -->
+						
+						
+						<!-- Item -->
+						<div  class="slider__one_item" >
+							<div class="slider__one_layer" >	
+								<div class="slider__one_slide" >
+									<div>
+										<h1 class="slider__one_header1" >Feature 6</h1>
+										<h4 class="slider__one_header2" >Hamburger Buttons.</h4>
+										<p class="slider__one_info" >
+											There are many hamburger designs is use in many webpage. 
+											I am using "<b>Hamburger</b>" plugin for hamburger design 
+											because this plugin gives many attractive hamburger button design.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- // Item -->
+						
+					</div>
+					<div class="slider-progress" >
+						<i class="fa fa-play slider__one_play-pause" ></i>
+						<i class="fa fa-pause slider__one_play-pause" ></i>
+						<div class="progress" ></div>
+					</div>
+				</section>
+				<!-- /header slider -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<!-- about project section-->
+				<section class="about__project flat-box" >
+					<div class="container px-4 px-md-5 py-5"  >
+						<h1 class="h1 p-2 wow fadeInUp mt-5" >About this project.</h1>
+						<p class="text-justify wow fadeInUp" > I always want to create something new, unique and creative web app that has following features and I tried to achieve it in this project.</p>
+						<br>
+						<p class="h2 wow fadeInUp" >Features:</p><br>
+						<h4 class="h4 wow fadeInLeft" > 1. Touch responsive sidebar.</h4>
+						<p class="wow fadeInUp text-justify mb-5" data-wow-delay=".3s">
+							I tried to make touch responsive sidebar that allows to
+							open & close sidebar drawer with your finger moving direction as like android 
+							application sidebar drawer.
+							<br>
+							You can open sidebar by swiping finger
+							from the end of left side. Sidebar will be
+							open or, close with your finger moving 
+							direction.
+						</p>
+						<br>
+						<br>
+					</div>
+				</section>
+				<!-- /about project -->
+				
+				<!-- plugin parallax -->
+				<section class="plugin__parallax pl__container py-5 flat-box" >
+					<div class="content container wow fadeInUp my-5 flat-box-light" >
+						<h1 class="h1 wow fadeInUp" data-wow-delay=".9s">Used Plugins. </h1><hr class="mt-0 wow fadeInRight bg-white delay-2s" >
+						<div class="plugins text-left pl-5 wow fadeInUp" data-wow-delay=".9s">
+							1. jQuery<a href="#" > Link</a><br>
+							2. Bootstrap 4<a href="#" > Link</a><br>
+							3. Animate.css<a href="#" > Link</a><br>
+							4. wow.js<a href="#" > Link</a> or,<br> &nbsp&nbsp&nbsp AOS</a><a href="#" > Link</a><br>
+							5. universal-parallax<a href="#" > Link</a><br>
+							6. Wave<a href="#" > Link.js</a><br>
+						</div>
+					</div>
+					<div class="parallax" data-parallax-image="./assets/img/web/laptop-typing.jpg">
+				</section>
+				
+				<!-- /plugin parallax -->
+				
+				<!-- about developer -->
+				<section class="about__dev float-box" >
+					<div style='background-image:url("./assets/img/web/white-paper.jpg"); font-weight:bold' class="py-5 px-4" >
+						<h3 class="mt-5 border border-primary rounded text-light bg-primary text-center p-3 wow fadeInUp" >About Us</h3>
+						<p class="text-primary p-3 text-justify wow fadeInUp" >
+							<i>Hi, I am Satish. I have knowledge and experience of front-end language 
+							as like <b>html, CSS, JavaScript</b> and back-end script <b>php, MySQL</b> with <b>Object 
+							Oriented Programme (OPP)</b> Concept and also have knowledge of frameworks as like <b>Bootstrap, jQuery</b> and another useful 
+							<b>PHP Libraries</b>. I like to create something new and I always curious about learn and use new things.<br><br>
+							</i>
+						</p>
+					</div>
+				</section>
+				<!-- /about developer -->
+				<!-- connect us section -->
+				<section style="background:url('./assets/img/web/laptop-typing.jpg') no-repeat center center; background-size:cover;" class="connect__us" >
+					<div class="connect__us_layer float-box-light p-5" >
+						<p class="p-2 mb-4 border h3 text-center wow fadeInUp" >Connect with Us</p>
+						<a class="wow fadeInLeft" href="mailto:skwebservises@gmail.com" ><i class="fa fa-envelope " ></i> : skwebservises@gmail.com</a><br>
+						<a class="wow fadeInRight" href="https://facebook.com/skwebservices" ><i class="fa fa-facebook-square " ></i> : https://fb.com/skwebservices</a>
+					</div>
+				</section>
+				
+				<!-- /connect us -->
+				
+				<!-- vendor credit slider -->
+				<section class="vendor__credit p-3 pb-0 flat-box" style="background:url('assets/img/web/grey-paper.jpg');" >
+					<h4 class="text-primary" >We use:</h4>
+					<div class="vendor__slider" >
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/jquery.jpg" alt="jquery symbol image" ></div>
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/bootstrap.jpg" alt="bootstrap symbol image"></div>
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/font-awesome.jpg" alt="font-awesome symbol image"></div>
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/animate-css.jpg" alt="animate-css symbol image"></div>
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/wow-js.jpg" alt="wow-js symbol image"></div>
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/slick.png" alt="slick symbol image"></div>
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/aos.jpg" alt="aos symbol image"></div>
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/waves.png" alt="waves symbol image"></div>
+						<div class="vendor__slider_item" ><img src="./assets/img/brand/universal-parallax.jpg" alt="universal-parallax symbol image"></div>
+					</div>
+				</section>
+				
+				<!-- /vender credit slider -->
+				
+				
+				
+			</main>
+			<!-- /main -->
+			
+			<!-- footer -->
+			<footer class="bg-dark flat-box-light" >
+				<!-- footer social icons section -->
+				<section class="footer__social py-1 bg-primary" >
+					<div class="footer__social_icon container text-light center-center" >
+						<ul class="d-none d-md-flex" > <li>Follow us on : </li></ul>
+						<ul>
+							<li class="fb wow fadeInLeftBig float-icon" data-wow-delay=".3s" ><a href="https://fb.com/skwebsofficial/" ><i class="fa fa-facebook" ></i></a></li>
+							<li class="tw wow fadeInLeftBig float-icon" data-wow-delay="0" ><a href="https://twitter.com/SatishKmrSharma/" ><i class="fa fa-twitter" ></i></a></li>
+							<li class="ig wow fadeInRightBig float-icon" data-wow-delay="0" ><a href="https://instagram.com/satishkmrsharma/" ><i class="fa fa-instagram" ></i></a></li>
+							<li class="yt wow fadeInRightBig float-icon" data-wow-delay="0.3s" ><a href="#!" ><i class="fa fa-youtube" ></i></a></li>
+						</ul>
+					</div>
+				</section>
+				<!-- /footer social icons section -->
+				
+				<!-- footer links section -->
+				<section class="footer__links container py-4" >
+					<a class="wow fadeInRightBig flat-button-light" data-wow-delay=".3s" data-wow-offset="0" href="mailto:skwebservices@gmail.com" >Email</a>
+					<a class="wow fadeInRightBig flat-button" data-wow-delay=".6s" data-wow-offset="0" href="https://facebook.com/satishkumarsharma05">Facebook</a>
+					<a class="wow fadeInRightBig flat-button-light" data-wow-delay=".9s" data-wow-offset="0" href="https://m.me/sks555sks" >Messenger</a>
+				</section>
+				<!-- /footer links section -->
+				
+				<!-- copyright section -->
+				<section class="copyright my-auto py-4 text-center " >
+				&copy<script>//
+				document.write(new Date().getFullYear())</script> <a class="text-lightgrey mr-md-5" href="./" ><b>SKWebs.GitHub.io</b>.</a><span class="d-none d-md-inline" >All Right Reserved.</span>
+				</section>
+				<!-- /copyright section -->
+				
+				<!-- developer credit section -->
+				<section class="dev__credit" >
+				</section>
+				<!-- /developer credit section -->
+			</footer>
+		<!-- /footer -->
+			
+		</div>
+		<!--/overflow hidden of whole page -->
+		<!-- JavaScript libraries -->
+		<!-- jQuery -->
+		<script src="./assets/lib/jquery/3.4.1/jquery.min.js" ></script>
+		<!-- bootstrap js-->
+		<script src="./assets/lib/bootstrap/4.4.1/bootstrap.bundle.min.js" ></script>
+		<!-- waypoints -->
+		<script src="./assets/lib/waypoint/4.0.0/jquery.waypoints.min.js" ></script>
+		<!-- universal parallax -->
+		<script src="./assets/lib/universal-parallax/1.3.2/universal-parallax.min.js" ></script>
+		<!-- wowjs -->
+		<script src="./assets/lib/wow/1.1.2/wow.min.js" ></script>
+		<!-- slick js -->
+		<script src="./assets/lib/slick/1.8.1/slick.min.js" ></script>
+		<!-- slick js -->
+		<script src="./assets/lib/waves/0.7.6/waves.min.js" ></script>
+		<!-- share js -->
+		<script src="./assets/lib/backstretch/2.1.18/jquery.backstretch.min.js" ></script>
+		
+		<!-- init js -->
+		<script src="./assets/theme/js/init.js" ></script>
+		<!-- drawer js -->
+		<script src="./assets/theme/js/drawer.js" ></script>
+		<!-- slider js -->
+		<script src="./assets/theme/js/slider.js" ></script>
+		<script type="text/javascript">
+		 
+		</script>
+	</body>
+</html>
