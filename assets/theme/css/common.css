@@ -1,0 +1,98 @@
+/*
+* common.css
+*/
+*,:after,:before{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+}
+body,html{height:100%;width:100%}
+:root{
+    --hamburger-color:#000;
+    --bg-gradient-blue:linear-gradient(to top right, rgba(3, 17, 85, 1), rgba(24,154,201,1));
+    }
+    
+    /*-------------
+    Layout
+    --------------*/
+    /*
+    body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font: 400 15px/1.4 'Open Sans',sans-serif;
+    }
+    
+    header{
+    /* We want the header to have a static height - it will always take up just as much space as it needs.  */
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis *
+    flex: 0 0 auto;
+    }
+    
+    main{
+    /* By setting flex-grow to 1, the main content will take up 
+    all of the remaining space on the page (the other elements have flex-grow: 0 and won't contest the free space). */
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis *
+    flex: 1 0 auto;
+    }
+    
+    footer{
+    /* Just like the header, the footer will have a static height - it shouldn't grow or shrink.  */
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis *
+    flex: 0 0 auto;
+    }
+    */
+    *{font-family:"panton_bold";}
+    
+
+.vh-100{height:100vh;}
+.wow{visibility:hidden;}
+.center-center{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+/* ===/connect us CSS == */
+.connect__us{
+/*background:rgba(0,0,0,0.99) url("./assets/img/web/laptop-typing.jpg") no-repeat center center;*/
+background-image:url("assets/img/web/laptop-typing.jpg");
+background-size:cover;
+background:re;
+}
+.connect__us .connect__us_layer{
+background:rgba(0,0,0,0.65);
+color:#fff;
+}
+.connect__us .connect__us_layer a{
+display:inline-block;
+color:#fff;
+}
+.contact__us{
+background-image:url("assets/img/web/img1.jpg") !important;
+}
+.share{
+    position:fixed;
+    /*background:rgba(255,255,255,0.85);*/
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    right:2rem;
+    padding-right:3px;
+    bottom:4.5rem;
+    color:skyblue;
+    z-index:5;
+}
+#top{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    display:none;
+    z-index:1300;
+    background-image:linear-gradient(to top right, #000749 20%, #1CB1FB);
+    border:none;
+    border-radius:50% !important;
+    padding:8px 10px;
+}

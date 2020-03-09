@@ -1,0 +1,71 @@
+/*
+* footer.css
+*/
+
+/*
+|-----------------------------------------
+| footer css (All footer CSS here)
+|-----------------------------------------
+*/
+/*not used
+.footer{
+background:#353A40;
+}*/
+
+.footer__social_icon{background:;flex-direction:row !important;color:grey;}
+.footer__social_icon ul{
+margin:0 5px;
+padding:0;
+display:flex;
+}
+.footer__social_icon ul li{
+list-style:none;
+margin:0 5px;
+}
+.footer__social_icon ul li a{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+width:40px;
+height:40px;
+overflow:hidden;
+border-radius:50%;
+text-decoration:none;
+font-size:1.25rem;
+color:#fff;
+transition:all .5s;
+}
+
+.footer__social_icon ul li a .fa{
+transition:.5s;
+}
+footer__social_icon ul li a:hover{
+border:1px solid #fff;
+border-radius:50%;
+overflow:hidden;
+}
+.footer__social_icon ul li a:hover .fa{
+color:#fff;
+transform:scale(.85);
+}
+
+
+.footer__links a{
+margin:5px 10px;
+display:inline-block;
+color:#ccc !important;
+text-decoration:none;
+transition:.5s;
+}
+.footer__links a:hover{
+color:#fff !important;
+font-weight:bold;
+transform:translateX(3px);
+}
+
+.copyright {
+background:rgba(0,0,0,.35);
+ackground:#212429;
+color:grey;
+}

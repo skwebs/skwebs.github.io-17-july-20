@@ -1,0 +1,66 @@
+/*
+* drawer.css
+*/
+.drawer{
+	position:fixed;
+	top:0;
+	bottom:0;
+	width:300px;
+	background:#fff; /*rgba(0,0,0,.5);*/
+	transform:translateX(-300px);
+	box-shadow:0 0 7px rgba(0,0,0,.3); 
+}
+.overlay{
+	position:fixed;
+	top:0;
+	bottom:0;left:0;right:0;
+	background:rgba(0,0,0,.5);
+	display:none;
+}
+.drawer__profile{
+	width:100%;
+	height:125px;
+	padding:20px;
+}
+.drawer__nav{
+	width:100%;
+	padding:5px 10px;
+	height:100vh;
+}
+.drawer__nav .nav-item{
+	padding:0 15px;
+	margin:5px 0;
+	box-shadow:1px 1px 5px #aaa;/*rgba(0,0,0,.5);*/
+	ackground:#007BFF;
+}
+drawer__nav .nav-item a{
+	padding-left:0 !important;
+}
+.drawer__nav .nav-item:hover{
+	background:#007BFF;
+}
+.drawer__nav .nav-item:active a,
+.drawer__nav .nav-item:hover a
+{
+	color:#fff ;
+}
+.drawer__nav .nav-item a:after{
+	position:absolute;
+	font-family: FontAwesome;
+	right:5px;
+	padding:0 15px;
+	display: inline-block;
+	content: "\f054";
+	vertical-align: middle;
+}
+.drawer__nav .nav-item a:before{
+	position:relative;
+	left:-15px;
+	padding:0 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.drawer__nav .nav-item.home a:before{
+	font-family: FontAwesome;
+	content: "\f015";
+}
